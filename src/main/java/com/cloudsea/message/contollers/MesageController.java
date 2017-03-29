@@ -25,8 +25,8 @@ public class MesageController {
 	}
 
 	@RequestMapping(method = RequestMethod.POST, value = "/sendmessage")
-	public void sendMessage(@RequestBody ClsMesage clsMessage) {
-		System.out.println(clsMessage);
+	public void sendMessage(@RequestBody String payload) {
+		System.out.println("From github :::::::: "+payload);
 		//messageSenderMap.get(clsMessage.getMessageType()).sendMessage(clsMessage);
 	}
 
